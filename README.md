@@ -8,46 +8,46 @@ A program which emulates all the docking stations, bikes, infrastructure require
 
 This is a project for Transport for London with an end goal to provide a network of docking stations and bikes that anyone can use.
 
-#Build status
+# Build status
 
 /pending/
 
-#Code style
+# Code style
 
 /pending/
 
-#Screenshots
+# Screenshots
 
 /pending/
 
-#Tech/framework used
+# Tech/framework used
 
 /pending/
 
-#Features
+# Features
 
 /pending/
 
-#Code example
+# Code example
 
 /pending/
 
-#API Reference
+# API Reference
 
 /pending/
 
-#Tests
+# Tests
 
 /pending/
 
-#How to use?
+# How to use?
 
 /pending/
 
-#Contribute
+# Contribute
 
 /pending/
 
-#License
+# License
 
 /pending/
