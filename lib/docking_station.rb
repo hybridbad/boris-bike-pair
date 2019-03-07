@@ -19,6 +19,7 @@ class DockingStation
   def docking(bike)
     fail 'Docking station full' if full?
   	docked << bike
+		# return bike
   end
 
   private
