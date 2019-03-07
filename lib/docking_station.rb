@@ -1,7 +1,7 @@
 require './lib/bike.rb'
 
 class DockingStation
-	attr_reader :docked, :capacity
+	attr_reader :capacity, :docked
 
 	def initialize(capacity = 20)
 		@docked = []
@@ -10,23 +10,24 @@ class DockingStation
 
   	def release_bike
   	# if @bike != nil
-	fail 'No available bikes' if @docked.empty?
-	@docked.pop
+	fail 'No available bikes' if empty?
+	docked.pop
 	#releases the first bike
   	end
 
   def docking(bike)
     fail 'Docking station full' if full?
-  	@docked << bike
+  	docked << bike
   end
 
-
+  private
+	
 	def full?
-		@docked.count >= capacity
+		docked.count >= capacity
 	end
 
 	def empty?
-		@docked.empty?
+		docked.empty?
 	end
 
 end

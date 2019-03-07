@@ -42,7 +42,7 @@ describe DockingStation do
 			expect { subject.release_bike }.to raise_error("No available bikes")
 		end
     it 'returns true if docking station is empty' do
-      expect(subject.empty?).to eq true
+      expect(subject.docked).to eq []
     end
 	end
 
@@ -54,7 +54,7 @@ describe DockingStation do
 		end
     it 'returns true when dock is full (more than 20)' do
       20.times { subject.docking(Bike.new) }
-      expect(subject.full?).to eq true
+      expect(subject.docked.length).to eq 20
     end
 
 	end
