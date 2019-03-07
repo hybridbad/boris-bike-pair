@@ -1,9 +1,10 @@
 require './lib/bike.rb'
 
 class DockingStation
+	DEFAULT_CAPACITY = 20
 	attr_reader :capacity, :docked
 
-	def initialize(capacity = 20)
+	def initialize(capacity = DEFAULT_CAPACITY)
 		@docked = []
 		@capacity = capacity
 	end
@@ -21,7 +22,7 @@ class DockingStation
   end
 
   private
-	
+
 	def full?
 		docked.count >= capacity
 	end
